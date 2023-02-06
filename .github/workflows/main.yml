@@ -14,4 +14,5 @@ jobs:
       uses: azure/container-apps-deploy-action@v0
       with:
         imageToDeploy: ghcr.io/perokvist/fiffi/rps.web:latest
+        containerAppEnvironment: managedEnvironment-rpsaca
         containerAppName: rps
