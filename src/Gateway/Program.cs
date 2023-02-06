@@ -6,6 +6,10 @@ builder.Services
 
 var app = builder.Build();
 
+app.MapGet("/", () => "Hello World!");
+
+app.UseRouting();
+
 app.MapReverseProxy();
 
 app.Run();
